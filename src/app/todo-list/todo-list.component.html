@@ -1,1 +1,10 @@
-<p>todo-list works!</p>
+<ul *ngFor="let item of list">
+  <li>
+    {{item.Name}} -
+    {{item.Age}} -
+    {{item.Email}}
+  </li>
+</ul>
+
+
+<button (click)="save()">send</button>
